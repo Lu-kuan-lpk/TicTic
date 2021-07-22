@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="39dp">
+
+        <ImageButton
+            android:id="@+id/upload_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/transparent"
+            android:src="@drawable/back">
+
+        </ImageButton>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="发布"
+            android:textSize="20dp"
+            android:textColor="@color/orange">
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <!--        通过使用textview来做出线的效果 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1.3dp"
+        android:background="@color/line"
+        android:layout_marginTop="77dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_upload"
+                android:layout_marginLeft="20dp"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:textColorHint="#99FFFFFF"
+                android:hint="写标题并使用合适的话题，能让更多人看到~"
+                android:textSize="13dp"
+                android:background="@null"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentLeft="true">
+
+                    <Button
+                        android:id="@+id/btn_change_cover"
+                        android:layout_width="65dp"
+                        android:layout_height="25dp"
+                        android:background="@color/background_grey"
+                        android:textColor="@color/text_log"
+                        android:gravity="center"
+                        android:textSize="12.5dp"
+                        android:text="选择封面"/>
+                    <Button
+                        android:id="@+id/btn_change_video"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="65dp"
+                        android:layout_height="25dp"
+                        android:textSize="12.5dp"
+                        android:background="@color/background_grey"
+                        android:textColor="@color/text_log"
+                        android:gravity="center"
+                        android:text="选择视频"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_cover"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                >
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_grey"
+                android:textColor="@color/text_log"
+                android:textSize="12.5dp"
+                android:text="封面图片"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <!--        通过使用textview来做出线的效果 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1.3dp"
+        android:background="@color/line"
+        android:layout_marginTop="220dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="240dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/locate"/>
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="你在哪里"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="285dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/open"/>
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="公开 所有人可见"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:src="@drawable/draft"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:text="草稿"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/upload_submit"
+                android:layout_marginLeft="20dp"
+                android:layout_width="275dp"
+                android:layout_height="match_parent"
+                android:background="@color/orange"
+                android:text="发布"/>
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:src="@drawable/setting2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:text="设置"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/background_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:src="@color/black"
+        />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/material_wave_loading"
+        />
+
+
+</RelativeLayout>

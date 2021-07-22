@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/head"
+                    app:civ_border_color="@color/civ_border_color"
+                    app:civ_border_width="4.18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID:wcbup"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/bar"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mine_main"
+            android:background="@color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/text_grey"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mine_upload"
+            android:background="@color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/text_grey"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/mine_camera"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add"
+                android:background="@color/black"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mine_message"
+            android:background="@color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@color/text_grey"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:background="@color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

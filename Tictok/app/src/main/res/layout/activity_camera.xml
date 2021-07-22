@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="38dp">
+
+        <ImageButton
+            android:id="@+id/camera_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:background="@color/transparent">
+
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/flip">
+
+        </ImageView>
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="翻转"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/speed">
+
+        </ImageView>
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="快慢速"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/filter">
+
+        </ImageView>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="滤镜"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/timer">
+
+        </ImageView>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="倒计时"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/beautier">
+
+        </ImageView>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="美化"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/shoting"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            >
+            <!--            注意centerinparent 是和parent的关系-->
+            <!--            只有parent元素是relative才可以使用centerin parent的方法-->
+            <!--            而gravity是里面的内容和自己的分块的关系-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/settings">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="道具"
+                        android:textSize="10dp"
+                        android:gravity="center">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/camera_shot"
+                        android:layout_width="77dp"
+                        android:layout_height="77dp"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/record2"
+                        android:background="@color/transparent"/>
+                    <TextView
+                        android:id="@+id/text_shot_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="拍摄"
+                        android:gravity="center">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/draft">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="相册"
+                        android:textSize="10dp"
+                        android:gravity="center">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:background="@color/black"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/select_shoting"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="分拍"
+                    android:textSize="14dp"
+                    android:textColor="#CCCCCC"
+                    android:gravity="center_vertical">
+
+                </TextView>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="快拍"
+                    android:textSize="18dp"
+                    android:textColor="@color/orange"
+                    android:gravity="center_vertical">
+
+                </TextView>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="影集"
+                    android:textSize="14dp"
+                    android:textColor="#CCCCCC"
+                    android:gravity="center_vertical">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

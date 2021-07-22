@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tictok">
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/tictic"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/tictic"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tictok">
+        <activity android:name=".Init.InitActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Mine.MineActivity">
+
+        </activity>
+        <activity android:name=".Camera.CameraActivity" />
+        <activity android:name=".Upload.UploadActivity" />
+        <activity android:name=".Stream.StreamActivity" ></activity>
+        <activity android:name=".Broad.BroadActivity" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>
