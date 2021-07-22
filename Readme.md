@@ -72,14 +72,12 @@
 
 ## 界面截图
 
-![image-20210723010457689](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20210723010457689.png)
+![播放](icons/%E6%92%AD%E6%94%BE.png)
 
-![image-20210723010512838](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20210723010512838.png
+![拍摄](icons/%E6%8B%8D%E6%91%84.png)
 
-![image-20210723010517306](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20210723010517306.png)
+![上传](icons/%E4%B8%8A%E4%BC%A0.png)
 
-![image-20210723010525210](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20210723010525210.png)
+![视频流](icons/%E8%A7%86%E9%A2%91%E6%B5%81.png)
 
-![image-20210723010530573](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20210723010530573.png)
-
-![image-20210723010539373](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20210723010539373.png)
+![我的](icons/%E6%88%91%E7%9A%84.png)
